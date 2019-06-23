@@ -1,4 +1,4 @@
-FROM ipfs/go-ipfs:v0.4.21
+FROM ipfs/go-ipfs:latest
 
 COPY ./start_ipfs /usr/local/bin/start_ipfs
 RUN chmod +x /usr/local/bin/start_ipfs
