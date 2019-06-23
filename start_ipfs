@@ -25,7 +25,8 @@ else
   ipfs config Addresses.API /ip4/0.0.0.0/tcp/5001
   ipfs config Addresses.Gateway /ip4/0.0.0.0/tcp/8080
   ipfs bootstrap rm all
-  ipfs bootstrap add /ip4/$SWARM_NODE_IP/tcp/4001/ipfs/$SWARM_NODE_ID
+  #ipfs bootstrap add /ip4/$SWARM_NODE_IP/tcp/4001/ipfs/$SWARM_NODE_ID
+  ipfs bootstrap add /dns4/$SWARM_NODE/tcp/4001/ipfs/$SWARM_NODE_ID
 fi
 
 exec ipfs "$@"
